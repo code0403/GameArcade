@@ -3,6 +3,8 @@ import http from "http";
 import { Server as IOServer } from "socket.io";
 import cors from "cors";
 import dotenv from "dotenv";
+import scoreRoutes from "./routes/scoreRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -10,6 +12,10 @@ app.use(cors());
 app.use(express.json());
 
 app.get("/", (req, res) => res.json({ message: "Game Arcade API" }));
+app.get("/health", (req, res) => res.json({ status: "OK" }));
+
+app.use("/api/auth", authRoutes);
+app.use("/api/scores", scoreRoutes);
 
 const server = http.createServer(app);
 const io = new IOServer(server, { cors: { origin: "*" } });
