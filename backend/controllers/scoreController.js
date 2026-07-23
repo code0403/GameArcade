@@ -30,7 +30,7 @@ export const submitScore = async (req, res) => {
     }
 
     // also save to global Score collection for leaderboards
-    const newScore = await Score.create({
+    const newScore = await scoreModel.create({
       userId,
       username,
       game,
@@ -65,7 +65,7 @@ export const getLeaderboards = async (req, res) => {
 
 export const getUserProfile = async (req, res) => {
   try {
-    const user = await User.findById(req.user.id).lean();
+    const user = await userModel.findById(req.user.id).lean();
     if (!user) return res.status(404).json({ msg: "Not found" });
 
     res.json({
