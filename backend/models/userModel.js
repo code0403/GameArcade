@@ -1,10 +1,12 @@
 import mongoose from "mongoose";
 
 const ScoreSchema = new mongoose.Schema({
-  game: { type: String, required: true },        
-  difficulty: { type: Number, required: true },   
+  game: { type: String, required: true },
+  difficulty: { type: Number, required: false },
+  mode: { type: String, enum: ["solo", "multiplayer"], default: "solo" },
   moves: Number,
   time: Number,
+  metadata: { type: mongoose.Schema.Types.Mixed, default: {} },
   date: { type: Date, default: Date.now }
 }, { _id: false });
 

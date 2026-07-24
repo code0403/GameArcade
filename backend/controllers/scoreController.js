@@ -3,40 +3,36 @@ import userModel from "../models/userModel.js";
 
 export const submitScore = async (req, res) => {
   try {
-    const { game, difficulty, moves, time } = req.body;
-    if (!game || !difficulty) return res.status(400).json({ msg: "Missing fields" });
+    const { game, difficulty, mode = "solo", moves, time, metadata = {} } = req.body;
+    if (!game) return res.status(400).json({ msg: "Missing fields" });
 
-    const userId = req.user?.id || null;
-    let username;
+    const user = await userModel.findById(req.user.id);
+    if (!user) return res.status(404).json({ msg: "User not found" });
 
-    if (userId) {
-      const user = await userModel.findById(userId);
-      if (!user) return res.status(404).json({ msg: "User not found" });
-      username = user.username;
+    // persist in user's gameStats
+    const key = `${game}`; // e.g. memory
+    const userStats = user.gameStats.get(key) || { bestTime: null, bestMoves: null, history: [] };
 
-      // persist in user's gameStats
-      const key = `${game}`; // e.g. memory
-      const userStats = user.gameStats.get(key) || { bestTime: null, bestMoves: null, history: [] };
+    userStats.history = userStats.history || [];
+    userStats.history.unshift({ game, difficulty, mode, moves, time, metadata, date: new Date() });
 
-      userStats.history = userStats.history || [];
-      userStats.history.unshift({ game, difficulty, moves, time, date: new Date() });
+    // update best metrics
+    if (!userStats.bestTime || time < userStats.bestTime) userStats.bestTime = time;
+    if (!userStats.bestMoves || moves < userStats.bestMoves) userStats.bestMoves = moves;
 
-      // update best metrics
-      if (!userStats.bestTime || time < userStats.bestTime) userStats.bestTime = time;
-      if (!userStats.bestMoves || moves < userStats.bestMoves) userStats.bestMoves = moves;
-
-      user.gameStats.set(key, userStats);
-      await user.save();
-    }
+    user.gameStats.set(key, userStats);
+    await user.save();
 
     // also save to global Score collection for leaderboards
     const newScore = await scoreModel.create({
-      userId,
-      username,
+      userId: user._id,
+      username: user.username,
       game,
       difficulty,
+      mode,
       moves,
-      time
+      time,
+      metadata
     });
 
     return res.json({ ok: true, score: newScore });
@@ -48,10 +44,13 @@ export const submitScore = async (req, res) => {
 
 export const getLeaderboards = async (req, res) => {
   try {
-    const { game, difficulty = 4, limit = 10 } = req.query;
+    const { game, difficulty, limit = 10 } = req.query;
     if (!game) return res.status(400).json({ msg: "Missing game" });
 
-    const top = await scoreModel.find({ game, difficulty: Number(difficulty) })
+    const query = { game };
+    if (difficulty !== undefined) query.difficulty = Number(difficulty);
+
+    const top = await scoreModel.find(query)
       .sort({ time: 1, moves: 1 })
       .limit(Number(limit))
       .lean();
@@ -73,7 +72,7 @@ export const getUserProfile = async (req, res) => {
       username: user.username,
       email: user.email,
       theme: user.theme,
-      gameStats: Object.fromEntries(user.gameStats)
+      gameStats: user.gameStats || {}
     });
   } catch (err) {
     console.error(err);

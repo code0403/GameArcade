@@ -5,8 +5,10 @@ import Card from "./Card";
 import { createDeck } from "@/utils/createDeck";
 import cardsJSON from "@/data/memory-cards.json";
 import { useGameStore } from "@/lib/store/gameStore";
+import { useAuthStore } from "@/lib/store/authStore";
 import WinModal from "./_components/WinModal";
 import confetti from "canvas-confetti";
+import api from "@/lib/api";
 
 export default function GameGrid({cards: propCards, gridSize, setCards}) {
     // console.log(Array.isArray(propCards));
@@ -33,6 +35,8 @@ export default function GameGrid({cards: propCards, gridSize, setCards}) {
     calculateScore,
     resetTimer,
   } = useGameStore();
+
+  const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
 
   const initializedRef = useRef(false);
   const confettiTriggeredRef = useRef(false);
@@ -116,7 +120,17 @@ export default function GameGrid({cards: propCards, gridSize, setCards}) {
             setGameWon(true);
             stopTimer();
             calculateScore();
-            saveScore(gridSize, moves, time);
+            if (isAuthenticated) {
+              api
+                .post("/scores/submit", {
+                  game: "memory",
+                  difficulty: gridSize,
+                  mode: "solo",
+                  moves,
+                  time,
+                })
+                .catch(() => {});
+            }
           }
         }, 300);
       }, 400);
@@ -172,6 +186,7 @@ export default function GameGrid({cards: propCards, gridSize, setCards}) {
         moves={moves}
         time={time}
         onRestart={handleReset}
+        scoreSaved={isAuthenticated}
       />
     </>
   );

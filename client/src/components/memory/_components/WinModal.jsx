@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   Dialog,
   DialogContent,
@@ -9,7 +10,7 @@ import {
   DialogFooter
 } from "@/components/ui/dialog";
 
-export default function WinModal({ open, moves, time, onRestart }) {
+export default function WinModal({ open, moves, time, onRestart, scoreSaved }) {
   return (
     <Dialog open={open}>
       <DialogContent className="bg-slate-900 text-white border border-slate-700">
@@ -29,6 +30,11 @@ export default function WinModal({ open, moves, time, onRestart }) {
           <p className="text-lg">
             <span className="font-semibold">Time:</span> {time}s
           </p>
+          {!scoreSaved && (
+            <p className="text-sm text-amber-400 pt-2">
+              <Link href="/login" className="underline">Log in</Link> to save this score to the leaderboard.
+            </p>
+          )}
         </div>
 
         <DialogFooter>

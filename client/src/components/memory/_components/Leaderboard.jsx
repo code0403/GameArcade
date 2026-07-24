@@ -1,12 +1,28 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
-import { getScores } from "@/utils/leaderboard";
+import api from "@/lib/api";
 
 export default function Leaderboard({ difficulty }) {
-  const scores = getScores(difficulty);
+  const [scores, setScores] = useState([]);
+
+  useEffect(() => {
+    let cancelled = false;
+    api
+      .get("/scores/leaderboard", { params: { game: "memory", difficulty } })
+      .then(({ data }) => {
+        if (!cancelled) setScores(data.top);
+      })
+      .catch(() => {
+        if (!cancelled) setScores([]);
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [difficulty]);
 
   return (
     <Card className="bg-slate-800 text-white w-full max-w-md mx-auto mt-6">
@@ -25,11 +41,12 @@ export default function Leaderboard({ difficulty }) {
           <div className="flex flex-col gap-4">
             {scores.map((s, index) => (
               <div
-                key={s.id}
+                key={s._id}
                 className="flex justify-between items-center bg-slate-700 p-3 rounded-lg"
               >
                 <Badge variant="outline">{index + 1}</Badge>
                 <div className="text-sm">
+                  <p className="font-semibold">{s.username}</p>
                   <p>⏱ {s.time}s</p>
                   <p>🎯 {s.moves} moves</p>
                 </div>

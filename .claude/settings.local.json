@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C \"d:\\\\Projects\\\\GameArcade\" status --short)",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:5000/health)",
+      "Bash(rm -f cookies.txt)",
+      "Bash(curl -s -i -c cookies.txt -X POST http://localhost:5000/api/auth/register -H 'Content-Type: application/json' -d '{\"username\":\"testuser1\",\"email\":\"testuser1@example.com\",\"password\":\"password123\"}')",
+      "Bash(curl -s -i -b cookies.txt -X POST http://localhost:5000/api/scores/submit -H 'Content-Type: application/json' -d '{\"game\":\"memory\",\"difficulty\":4,\"moves\":10,\"time\":30}')",
+      "Bash(curl -s -i -c cookies2.txt -X POST http://localhost:5000/api/auth/login -H 'Content-Type: application/json' -d '{\"emailOrUsername\":\"testuser1\",\"password\":\"password123\"}')",
+      "Bash(curl -s -i -b cookies.txt -c cookies.txt -X POST http://localhost:5000/api/auth/logout)",
+      "Bash(curl -s http://localhost:5000/api/scores/leaderboard?game=memory\\\\&difficulty=4)",
+      "Bash(pkill -f \"node server.js\")",
+      "Skill(run)",
+      "Skill(run:*)",
+      "Bash(npm ls *)",
+      "Bash(node -e \"try{require.resolve\\('playwright'\\);console.log\\('has playwright'\\)}catch\\(e\\){console.log\\('no playwright'\\)}\")",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(npx playwright *)",
+      "Bash(lsof -ti:5000 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)",
+      "Bash(npm run *)",
+      "Bash(disown)",
+      "Bash(lsof -ti:3000 -sTCP:LISTEN)",
+      "Bash(curl -sf http://localhost:5000/health)",
+      "Bash(break)",
+      "Bash(curl -sf http://localhost:3000)",
+      "Bash(node verify.js)"
+    ]
+  }
+}
