@@ -17,6 +17,8 @@ const UserSchema = new mongoose.Schema({
   theme: { type: String, enum: ["light","dark"], default: "dark" },
   avatarUrl: { type: String, default: "" },
 
+  friends: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
+
   // aggregated stats per game
   gameStats: {
     type: Map,

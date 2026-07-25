@@ -23,6 +23,12 @@ export default function Nav() {
       <div className="flex items-center gap-4">
         {isHydrating ? null : isAuthenticated ? (
           <>
+            <Link href="/friends" className="text-sm text-gray-300 hover:text-white">
+              Friends
+            </Link>
+            <Link href="/groups" className="text-sm text-gray-300 hover:text-white">
+              Groups
+            </Link>
             <span className="text-sm text-gray-300">{user?.username}</span>
             <Button
               size="sm"

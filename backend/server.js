@@ -9,6 +9,8 @@ import dotenv from "dotenv";
 import connectDB from "./config/db.js";
 import scoreRoutes from "./routes/scoreRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
+import friendRoutes from "./routes/friendRoutes.js";
+import groupRoutes from "./routes/groupRoutes.js";
 
 dotenv.config();
 await connectDB();
@@ -28,6 +30,8 @@ app.get("/health", (req, res) => res.json({ status: "OK" }));
 
 app.use("/api/auth", authLimiter, authRoutes);
 app.use("/api/scores", scoreRoutes);
+app.use("/api/friends", friendRoutes);
+app.use("/api/groups", groupRoutes);
 
 const server = http.createServer(app);
 const io = new IOServer(server, { cors: corsOptions });
