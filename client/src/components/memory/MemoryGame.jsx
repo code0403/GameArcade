@@ -48,7 +48,7 @@ export default function MemoryGame() {
             setCards={setCards}
           />
 
-          {gameWon && <Leaderboard difficulty={difficulty} />}
+          <Leaderboard difficulty={difficulty} />
         </>
       )}
     </div>

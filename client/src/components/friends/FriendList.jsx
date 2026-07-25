@@ -2,6 +2,7 @@
 
 import { Avatar } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
+import InviteModal from "@/components/lobby/InviteModal";
 import api from "@/lib/api";
 
 export default function FriendList({ friends, onChanged }) {
@@ -25,9 +26,12 @@ export default function FriendList({ friends, onChanged }) {
             <Avatar username={friend.username} avatarUrl={friend.avatarUrl} />
             <span>{friend.username}</span>
           </div>
-          <Button size="sm" variant="secondary" onClick={() => handleRemove(friend._id)}>
-            Remove
-          </Button>
+          <div className="flex gap-2">
+            <InviteModal friend={friend} />
+            <Button size="sm" variant="secondary" onClick={() => handleRemove(friend._id)}>
+              Remove
+            </Button>
+          </div>
         </div>
       ))}
     </div>

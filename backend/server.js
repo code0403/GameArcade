@@ -11,6 +11,7 @@ import scoreRoutes from "./routes/scoreRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import friendRoutes from "./routes/friendRoutes.js";
 import groupRoutes from "./routes/groupRoutes.js";
+import registerSockets from "./sockets/index.js";
 
 dotenv.config();
 await connectDB();
@@ -37,12 +38,7 @@ const server = http.createServer(app);
 const io = new IOServer(server, { cors: corsOptions });
 app.set("io", io);
 
-io.on("connection", (socket) => {
-  console.log("Socket connected:", socket.id);
-  socket.on("disconnect", () => {
-    console.log("Socket disconnected:", socket.id);
-  });
-});
+registerSockets(io);
 
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
