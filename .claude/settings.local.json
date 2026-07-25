@@ -34,7 +34,10 @@
       "Bash(powershell -Command \"Get-CimInstance Win32_Process -Filter \\\\\"Name='node.exe'\\\\\" | Select-Object ProcessId,ParentProcessId,CommandLine | Format-List\")",
       "Bash(curl -s http://localhost:3000 -o /dev/null -w \"frontend status: %{http_code}\\\\n\")",
       "Bash(curl -sf http://localhost:8000/health)",
-      "Bash(node verify2.js)"
+      "Bash(node verify2.js)",
+      "Bash(node -e \"console.log\\(require.resolve\\('cookie'\\)\\)\")",
+      "Bash(curl -s -o /dev/null -w \"frontend: %{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(node verify3.js)"
     ]
   }
 }

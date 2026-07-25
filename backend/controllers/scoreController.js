@@ -1,6 +1,12 @@
 import scoreModel from "../models/scoreModel.js";
 import userModel from "../models/userModel.js";
 
+const getTopScores = (game, difficulty, limit = 10) => {
+  const query = { game };
+  if (difficulty !== undefined) query.difficulty = Number(difficulty);
+  return scoreModel.find(query).sort({ time: 1, moves: 1 }).limit(limit).lean();
+};
+
 export const submitScore = async (req, res) => {
   try {
     const { game, difficulty, mode = "solo", moves, time, metadata = {} } = req.body;
@@ -35,6 +41,11 @@ export const submitScore = async (req, res) => {
       metadata
     });
 
+    if (difficulty !== undefined) {
+      const top = await getTopScores(game, difficulty);
+      req.app.get("io")?.to(`leaderboard:${game}:${difficulty}`).emit("leaderboard:update", top);
+    }
+
     return res.json({ ok: true, score: newScore });
   } catch (err) {
     console.error(err);
@@ -47,13 +58,7 @@ export const getLeaderboards = async (req, res) => {
     const { game, difficulty, limit = 10 } = req.query;
     if (!game) return res.status(400).json({ msg: "Missing game" });
 
-    const query = { game };
-    if (difficulty !== undefined) query.difficulty = Number(difficulty);
-
-    const top = await scoreModel.find(query)
-      .sort({ time: 1, moves: 1 })
-      .limit(Number(limit))
-      .lean();
+    const top = await getTopScores(game, difficulty, Number(limit));
 
     res.json({ top });
   } catch (err) {

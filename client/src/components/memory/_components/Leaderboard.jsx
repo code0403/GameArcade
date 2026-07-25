@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import api from "@/lib/api";
+import { socket } from "@/lib/socket";
 
 export default function Leaderboard({ difficulty }) {
   const [scores, setScores] = useState([]);
@@ -21,6 +22,17 @@ export default function Leaderboard({ difficulty }) {
       });
     return () => {
       cancelled = true;
+    };
+  }, [difficulty]);
+
+  useEffect(() => {
+    const handleUpdate = (top) => setScores(top);
+    socket.emit("leaderboard:subscribe", { game: "memory", difficulty });
+    socket.on("leaderboard:update", handleUpdate);
+
+    return () => {
+      socket.emit("leaderboard:unsubscribe", { game: "memory", difficulty });
+      socket.off("leaderboard:update", handleUpdate);
     };
   }, [difficulty]);
 
