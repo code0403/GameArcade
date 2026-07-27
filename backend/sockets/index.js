@@ -2,6 +2,7 @@ import jwt from "jsonwebtoken";
 import cookie from "cookie";
 import registerLobbyHandlers from "./lobby.js";
 import registerLeaderboardHandlers from "./leaderboard.js";
+import registerTicTacToeHandlers from "./tictactoe.js";
 
 export default function registerSockets(io) {
   io.use((socket, next) => {
@@ -24,6 +25,7 @@ export default function registerSockets(io) {
 
     registerLobbyHandlers(io, socket);
     registerLeaderboardHandlers(io, socket);
+    registerTicTacToeHandlers(io, socket);
 
     socket.on("disconnect", () => {
       console.log("Socket disconnected:", socket.id);
