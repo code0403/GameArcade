@@ -37,7 +37,8 @@
       "Bash(node verify2.js)",
       "Bash(node -e \"console.log\\(require.resolve\\('cookie'\\)\\)\")",
       "Bash(curl -s -o /dev/null -w \"frontend: %{http_code}\\\\n\" http://localhost:3000)",
-      "Bash(node verify3.js)"
+      "Bash(node verify3.js)",
+      "Bash(node verify4a.js)"
     ]
   }
 }

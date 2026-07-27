@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import { Avatar } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { socket } from "@/lib/socket";
+import TicTacToeGame from "@/components/tictactoe/TicTacToeGame";
+
+const SUPPORTED_GAMES = ["tictactoe"];
 
 export default function LobbyRoom({ roomId }) {
   const [room, setRoom] = useState(null);
@@ -50,10 +53,14 @@ export default function LobbyRoom({ roomId }) {
             </div>
           ))}
         </div>
-        <p className="text-sm text-amber-400 text-center">
-          Multiplayer {room.game} is coming soon — you&apos;re both in the room and ready to go
-          once it ships.
-        </p>
+        {SUPPORTED_GAMES.includes(room.game) ? (
+          <TicTacToeGame roomId={roomId} players={room.players} />
+        ) : (
+          <p className="text-sm text-amber-400 text-center">
+            Multiplayer {room.game} is coming soon — you&apos;re both in the room and ready to go
+            once it ships.
+          </p>
+        )}
       </CardContent>
     </Card>
   );
