@@ -1,0 +1,1312 @@
+{
+    "fantasy": [
+        {
+            "id": "fantasy-1",
+            "category": "fantasy",
+            "difficulty": "easy",
+            "question": "In 'The Lord of the Rings', what type of creature is Frodo Baggins?",
+            "options": [
+                "Elf",
+                "Hobbit",
+                "Dwarf",
+                "Human"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "fantasy-2",
+            "category": "fantasy",
+            "difficulty": "easy",
+            "question": "Which house does Harry Potter belong to at Hogwarts?",
+            "options": [
+                "Slytherin",
+                "Ravenclaw",
+                "Gryffindor",
+                "Hufflepuff"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "fantasy-3",
+            "category": "fantasy",
+            "difficulty": "easy",
+            "question": "What mythological creature is known for rising from its own ashes?",
+            "options": [
+                "Griffin",
+                "Dragon",
+                "Phoenix",
+                "Basilisk"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "fantasy-4",
+            "category": "fantasy",
+            "difficulty": "easy",
+            "question": "In 'The Chronicles of Narnia', what kind of animal is Aslan?",
+            "options": [
+                "Bear",
+                "Lion",
+                "Wolf",
+                "Stag"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "fantasy-5",
+            "category": "fantasy",
+            "difficulty": "easy",
+            "question": "What metal is famously toxic or harmful to standard lycanthropes (werewolves)?",
+            "options": [
+                "Gold",
+                "Iron",
+                "Bronze",
+                "Silver"
+            ],
+            "correctIndex": 3
+        },
+        {
+            "id": "fantasy-6",
+            "category": "fantasy",
+            "difficulty": "easy",
+            "question": "Who wrote 'The Hobbit'?",
+            "options": [
+                "C.S. Lewis",
+                "J.R.R. Tolkien",
+                "George R.R. Martin",
+                "Terry Pratchett"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "fantasy-7",
+            "category": "fantasy",
+            "difficulty": "easy",
+            "question": "In King Arthur legend, what is the name of his legendary sword?",
+            "options": [
+                "Glamdring",
+                "Excalibur",
+                "Andúril",
+                "Mjolnir"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "fantasy-8",
+            "category": "fantasy",
+            "difficulty": "medium",
+            "question": "In 'A Song of Ice and Fire', what is the ancestral seat of House Stark?",
+            "options": [
+                "Riverrun",
+                "Eyrie",
+                "Winterfell",
+                "Casterly Rock"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "fantasy-9",
+            "category": "fantasy",
+            "difficulty": "medium",
+            "question": "What is the name of Geralt's horse in 'The Witcher' series?",
+            "options": [
+                "Shadowfax",
+                "Roach",
+                "Bucephalus",
+                "Kelpie"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "fantasy-10",
+            "category": "fantasy",
+            "difficulty": "medium",
+            "question": "In Terry Pratchett's 'Discworld' series, what giant animal carries the world on its back?",
+            "options": [
+                "A Dragon",
+                "A Whale",
+                "A Turtle",
+                "An Elephant"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "fantasy-11",
+            "category": "fantasy",
+            "difficulty": "medium",
+            "question": "In Brandon Sanderson's 'Mistborn' series, what power allows a user to burn metals for abilities?",
+            "options": [
+                "Allomancy",
+                "Surgebinding",
+                "Awakening",
+                "Chalkcraft"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "fantasy-12",
+            "category": "fantasy",
+            "difficulty": "medium",
+            "question": "What is the name of the magical board game in 'Jumanji'?",
+            "options": [
+                "Zathura",
+                "Jumanji",
+                "Pandora",
+                "Labyrinth"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "fantasy-13",
+            "category": "fantasy",
+            "difficulty": "medium",
+            "question": "In Dungeons & Dragons, which plane of existence is known as the realm of shadow and gloom?",
+            "options": [
+                "Feywild",
+                "Nine Hells",
+                "Shadowfell",
+                "Abyss"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "fantasy-14",
+            "category": "fantasy",
+            "difficulty": "medium",
+            "question": "In 'The Wheel of Time' series, what title is given to the reincarnated champion of light?",
+            "options": [
+                "The Dragon Reborn",
+                "The Stormbringer",
+                "The Darkone",
+                "The Shadow Slayer"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "fantasy-15",
+            "category": "fantasy",
+            "difficulty": "hard",
+            "question": "In Tolkien's lore, who was the original Dark Lord before Sauron?",
+            "options": [
+                "Saruman",
+                "Morgoth",
+                "Witch-king",
+                "Gothmog"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "fantasy-16",
+            "category": "fantasy",
+            "difficulty": "hard",
+            "question": "In Patrick Rothfuss's 'The Name of the Wind', what is the name of the university's underground tunnels?",
+            "options": [
+                "The Underthing",
+                "The Catacombs",
+                "The Substratum",
+                "The Hollows"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "fantasy-17",
+            "category": "fantasy",
+            "difficulty": "hard",
+            "question": "In Robert Jordan's 'The Wheel of Time', what is the term for male channelers' madness caused by the taint on Saidin?",
+            "options": [
+                "The Breaking",
+                "The Taint",
+                "The Madness",
+                "The Compulsion"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "fantasy-18",
+            "category": "fantasy",
+            "difficulty": "hard",
+            "question": "In Michael Moorcock's Elric saga, what is the name of Elric's soul-stealing sword?",
+            "options": [
+                "Stormbringer",
+                "Mournblade",
+                "Soul Edge",
+                "Callandor"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "fantasy-19",
+            "category": "fantasy",
+            "difficulty": "hard",
+            "question": "What fictional language was constructed by M.A.R. Barker for the world of Tékumel?",
+            "options": [
+                "Quenya",
+                "Thu'um",
+                "Tlani",
+                "Tsolyáni"
+            ],
+            "correctIndex": 3
+        },
+        {
+            "id": "fantasy-20",
+            "category": "fantasy",
+            "difficulty": "hard",
+            "question": "In Ursula K. Le Guin's 'Earthsea' series, what is Ged's true name?",
+            "options": [
+                "Sparrowhawk",
+                "Gont",
+                "Dragonlord",
+                "Sparrow"
+            ],
+            "correctIndex": 0
+        }
+    ],
+    "science": [
+        {
+            "id": "science-1",
+            "category": "science",
+            "difficulty": "easy",
+            "question": "What is the chemical symbol for Gold?",
+            "options": [
+                "Ag",
+                "Au",
+                "Fe",
+                "Go"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "science-2",
+            "category": "science",
+            "difficulty": "easy",
+            "question": "Which planet in our solar system is known as the Red Planet?",
+            "options": [
+                "Venus",
+                "Jupiter",
+                "Mars",
+                "Saturn"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "science-3",
+            "category": "science",
+            "difficulty": "easy",
+            "question": "What process do plants use to convert sunlight into food?",
+            "options": [
+                "Respiration",
+                "Photosynthesis",
+                "Fermentation",
+                "Transpiration"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "science-4",
+            "category": "science",
+            "difficulty": "easy",
+            "question": "What force keeps us grounded on the surface of the Earth?",
+            "options": [
+                "Magnetism",
+                "Friction",
+                "Gravity",
+                "Centrifugal force"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "science-5",
+            "category": "science",
+            "difficulty": "easy",
+            "question": "What is the hardest natural substance on Earth?",
+            "options": [
+                "Gold",
+                "Iron",
+                "Diamond",
+                "Quartz"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "science-6",
+            "category": "science",
+            "difficulty": "easy",
+            "question": "How many bones are in the adult human body?",
+            "options": [
+                "106",
+                "206",
+                "306",
+                "406"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "science-7",
+            "category": "science",
+            "difficulty": "easy",
+            "question": "What gas do humans need to inhale to survive?",
+            "options": [
+                "Carbon Dioxide",
+                "Nitrogen",
+                "Oxygen",
+                "Helium"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "science-8",
+            "category": "science",
+            "difficulty": "medium",
+            "question": "What is the powerhouse of the cell?",
+            "options": [
+                "Nucleus",
+                "Ribosome",
+                "Mitochondria",
+                "Endoplasmic Reticulum"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "science-9",
+            "category": "science",
+            "difficulty": "medium",
+            "question": "Which SI unit is used to measure electric current?",
+            "options": [
+                "Volt",
+                "Watt",
+                "Ohm",
+                "Ampere"
+            ],
+            "correctIndex": 3
+        },
+        {
+            "id": "science-10",
+            "category": "science",
+            "difficulty": "medium",
+            "question": "What is the most abundant gas in Earth's atmosphere?",
+            "options": [
+                "Oxygen",
+                "Nitrogen",
+                "Carbon Dioxide",
+                "Argon"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "science-11",
+            "category": "science",
+            "difficulty": "medium",
+            "question": "At what temperature are Celsius and Fahrenheit equal?",
+            "options": [
+                "0",
+                "-40",
+                "100",
+                "-100"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "science-12",
+            "category": "science",
+            "difficulty": "medium",
+            "question": "Which scientist proposed the theory of general relativity?",
+            "options": [
+                "Isaac Newton",
+                "Albert Einstein",
+                "Niels Bohr",
+                "Galileo Galilei"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "science-13",
+            "category": "science",
+            "difficulty": "medium",
+            "question": "What type of wave is light?",
+            "options": [
+                "Electromagnetic",
+                "Mechanical",
+                "Longitudinal",
+                "Acoustic"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "science-14",
+            "category": "science",
+            "difficulty": "medium",
+            "question": "What is the pH value of pure, neutral water at room temperature?",
+            "options": [
+                "5",
+                "7",
+                "9",
+                "12"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "science-15",
+            "category": "science",
+            "difficulty": "hard",
+            "question": "Which subatomic particle is made up of two up quarks and one down quark?",
+            "options": [
+                "Neutron",
+                "Proton",
+                "Electron",
+                "Neutrino"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "science-16",
+            "category": "science",
+            "difficulty": "hard",
+            "question": "What is the boundary surrounding a black hole beyond which nothing can escape?",
+            "options": [
+                "Photon Sphere",
+                "Singularity",
+                "Event Horizon",
+                "Accretion Disk"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "science-17",
+            "category": "science",
+            "difficulty": "hard",
+            "question": "What fundamental force is mediated by gluons?",
+            "options": [
+                "Strong Nuclear Force",
+                "Weak Nuclear Force",
+                "Electromagnetism",
+                "Gravity"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "science-18",
+            "category": "science",
+            "difficulty": "hard",
+            "question": "In biochemistry, what enzyme unwinds the DNA double helix during replication?",
+            "options": [
+                "DNA Polymerase",
+                "Helicase",
+                "Ligase",
+                "Primase"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "science-19",
+            "category": "science",
+            "difficulty": "hard",
+            "question": "Which thermodynamic principle states that the entropy of an isolated system never decreases?",
+            "options": [
+                "Zeroth Law",
+                "First Law",
+                "Second Law",
+                "Third Law"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "science-20",
+            "category": "science",
+            "difficulty": "hard",
+            "question": "What is the name of the hypothetical subatomic particle that travels faster than light?",
+            "options": [
+                "Tachyon",
+                "Lepton",
+                "Boson",
+                "Hadron"
+            ],
+            "correctIndex": 0
+        }
+    ],
+    "history": [
+        {
+            "id": "history-1",
+            "category": "history",
+            "difficulty": "easy",
+            "question": "Who was the first President of the United States?",
+            "options": [
+                "Thomas Jefferson",
+                "Abraham Lincoln",
+                "George Washington",
+                "John Adams"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "history-2",
+            "category": "history",
+            "difficulty": "easy",
+            "question": "In which year did World War II end?",
+            "options": [
+                "1945",
+                "1939",
+                "1918",
+                "1963"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "history-3",
+            "category": "history",
+            "difficulty": "easy",
+            "question": "Which ancient civilization built the pyramids?",
+            "options": [
+                "Romans",
+                "Greeks",
+                "Egyptians",
+                "Mesopotamians"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "history-4",
+            "category": "history",
+            "difficulty": "easy",
+            "question": "Who was the British Prime Minister during most of World War II?",
+            "options": [
+                "Winston Churchill",
+                "Neville Chamberlain",
+                "Clement Attlee",
+                "Margaret Thatcher"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "history-5",
+            "category": "history",
+            "difficulty": "easy",
+            "question": "What wall divided East and West Berlin from 1961 to 1989?",
+            "options": [
+                "Great Wall of China",
+                "Berlin Wall",
+                "Hadrian's Wall",
+                "Western Wall"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "history-6",
+            "category": "history",
+            "difficulty": "easy",
+            "question": "Who was the first emperor of Rome?",
+            "options": [
+                "Julius Caesar",
+                "Augustus",
+                "Nero",
+                "Caligula"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "history-7",
+            "category": "history",
+            "difficulty": "easy",
+            "question": "Which war was fought between the North and South regions in the United States from 1861 to 1865?",
+            "options": [
+                "World War I",
+                "American Civil War",
+                "Revolutionary War",
+                "War of 1812"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "history-8",
+            "category": "history",
+            "difficulty": "easy",
+            "question": "Who was the first President of the United States?",
+            "options": [
+                "Thomas Jefferson",
+                "Abraham Lincoln",
+                "George Washington",
+                "John Adams"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "history-9",
+            "category": "history",
+            "difficulty": "easy",
+            "question": "In which year did World War II end?",
+            "options": [
+                "1945",
+                "1939",
+                "1918",
+                "1963"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "history-10",
+            "category": "history",
+            "difficulty": "easy",
+            "question": "Which ancient civilization built the pyramids?",
+            "options": [
+                "Romans",
+                "Greeks",
+                "Egyptians",
+                "Mesopotamians"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "history-11",
+            "category": "history",
+            "difficulty": "medium",
+            "question": "Who was the first emperor of China?",
+            "options": [
+                "Qin Shi Huang",
+                "Han Wudi",
+                "Tang Taizong",
+                "Ming Chengzu"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "history-12",
+            "category": "history",
+            "difficulty": "medium",
+            "question": "What year did the Berlin Wall fall?",
+            "options": [
+                "1987",
+                "1989",
+                "1991",
+                "1993"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "history-13",
+            "category": "history",
+            "difficulty": "medium",
+            "question": "Who was the British monarch during the American Revolution?",
+            "options": [
+                "George I",
+                "George II",
+                "George III",
+                "George IV"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "history-14",
+            "category": "history",
+            "difficulty": "medium",
+            "question": "Which empire was ruled by Genghis Khan?",
+            "options": [
+                "Mongol Empire",
+                "Ottoman Empire",
+                "Roman Empire",
+                "Persian Empire"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "history-15",
+            "category": "history",
+            "difficulty": "medium",
+            "question": "What was the main cause of the French Revolution?",
+            "options": [
+                "Economic hardship and social inequality",
+                "Religious conflict",
+                "Foreign invasion",
+                "Monarchical succession disputes"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "history-16",
+            "category": "history",
+            "difficulty": "hard",
+            "question": "Who was the last emperor of the Western Roman Empire?",
+            "options": [
+                "Romulus Augustulus",
+                "Julius Nepos",
+                "Constantine XI",
+                "Theodosius I"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "history-17",
+            "category": "history",
+            "difficulty": "hard",
+            "question": "What was the name of the ship that carried the Pilgrims to America in 1620?",
+            "options": [
+                "Mayflower",
+                "Santa Maria",
+                "Endeavour",
+                "Beagle"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "history-18",
+            "category": "history",
+            "difficulty": "hard",
+            "question": "Who was the leader of the Soviet Union during World War II?",
+            "options": [
+                "Vladimir Lenin",
+                "Joseph Stalin",
+                "Nikita Khrushchev",
+                "Leon Trotsky"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "history-19",
+            "category": "history",
+            "difficulty": "hard",
+            "question": "What was the primary cause of the American Civil War?",
+            "options": [
+                "Slavery",
+                "States' rights",
+                "Economic differences",
+                "Territorial expansion"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "history-20",
+            "category": "history",
+            "difficulty": "hard",
+            "question": "Who was the first female Prime Minister of the United Kingdom?",
+            "options": [
+                "Margaret Thatcher",
+                "Theresa May",
+                "Angela Merkel",
+                "Indira Gandhi"
+            ],
+            "correctIndex": 0
+        }
+    ],
+    "food": [
+        {
+            "id": "food-1",
+            "category": "food",
+            "difficulty": "easy",
+            "question": "Which country is famous for inventing pizza and pasta?",
+            "options": [
+                "Spain",
+                "Italy",
+                "Greece",
+                "France"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "food-2",
+            "category": "food",
+            "difficulty": "easy",
+            "question": "What primary ingredient is used to make guacamole?",
+            "options": [
+                "Tomato",
+                "Avocado",
+                "Cucumber",
+                "Zucchini"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "food-3",
+            "category": "food",
+            "difficulty": "easy",
+            "question": "Which fruit is known as the main ingredient in wine?",
+            "options": [
+                "Apple",
+                "Grape",
+                "Cherry",
+                "Plum"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "food-4",
+            "category": "food",
+            "difficulty": "easy",
+            "question": "What key ingredient gives bread its ability to rise?",
+            "options": [
+                "Baking Powder",
+                "Yeast",
+                "Cornstarch",
+                "Salt"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "food-5",
+            "category": "food",
+            "difficulty": "easy",
+            "question": "Sushi is a dish originally associated with which country?",
+            "options": [
+                "China",
+                "Thailand",
+                "Japan",
+                "Vietnam"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "food-6",
+            "category": "food",
+            "difficulty": "easy",
+            "question": "What is the main component of tofu?",
+            "options": [
+                "Soybeans",
+                "Rice",
+                "Wheat",
+                "Peanuts"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "food-7",
+            "category": "food",
+            "difficulty": "easy",
+            "question": "Which nut is used to make traditional marzipan?",
+            "options": [
+                "Walnut",
+                "Almond",
+                "Pistachio",
+                "Cashew"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "food-8",
+            "category": "food",
+            "difficulty": "medium",
+            "question": "Which spice is derived from the dried stigma of a crocus flower?",
+            "options": [
+                "Turmeric",
+                "Cardamom",
+                "Saffron",
+                "Paprika"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "food-9",
+            "category": "food",
+            "difficulty": "medium",
+            "question": "What type of milk is traditionally used to make real Mozzarella di Bufala?",
+            "options": [
+                "Cow's Milk",
+                "Goat's Milk",
+                "Water Buffalo's Milk",
+                "Sheep's Milk"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "food-10",
+            "category": "food",
+            "difficulty": "medium",
+            "question": "Which French cooking technique involves cooking food in oil at a low temperature over a long period?",
+            "options": [
+                "Sous-vide",
+                "Sautéing",
+                "Confit",
+                "Flambéing"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "food-11",
+            "category": "food",
+            "difficulty": "medium",
+            "question": "What gives the distinct flavor to Earl Grey tea?",
+            "options": [
+                "Jasmine",
+                "Bergamot",
+                "Chamomile",
+                "Lemongrass"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "food-12",
+            "category": "food",
+            "difficulty": "medium",
+            "question": "In culinary terms, what are the three ingredients that make up a classic French mirepoix?",
+            "options": [
+                "Onions, Carrots, Celery",
+                "Onions, Garlic, Tomatoes",
+                "Carrots, Potatoes, Leeks",
+                "Celery, Bell Peppers, Onions"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "food-13",
+            "category": "food",
+            "difficulty": "medium",
+            "question": "Which fermented Korean side dish is traditionally made with cabbage and radishes?",
+            "options": [
+                "Kimchi",
+                "Sauerkraut",
+                "Tsukemono",
+                "Achar"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "food-14",
+            "category": "food",
+            "difficulty": "medium",
+            "question": "What chemical reaction between amino acids and reducing sugars gives browned food its distinctive flavor?",
+            "options": [
+                "Caramelization",
+                "Fermentation",
+                "Maillard Reaction",
+                "Oxidation"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "food-15",
+            "category": "food",
+            "difficulty": "hard",
+            "question": "Which Mother Sauce in classic French cuisine is an emulsion of egg yolk, melted butter, and acid?",
+            "options": [
+                "Béchamel",
+                "Hollandaise",
+                "Velouté",
+                "Espagnole"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "food-16",
+            "category": "food",
+            "difficulty": "hard",
+            "question": "What is the name of the lethal toxin found in certain organs of the Fugu (pufferfish)?",
+            "options": [
+                "Ciguatoxin",
+                "Tetrodotoxin",
+                "Maitotoxin",
+                "Saxitoxin"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "food-17",
+            "category": "food",
+            "difficulty": "hard",
+            "question": "Which fungus species, prized in gastronomy, is often hunted using specially trained dogs or pigs?",
+            "options": [
+                "Morel",
+                "Chanterelle",
+                "Truffle",
+                "Matsutake"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "food-18",
+            "category": "food",
+            "difficulty": "hard",
+            "question": "What process is used to clarify broth into a crystal-clear consommé using egg whites and aromatics?",
+            "options": [
+                "Raft formation",
+                "Siphoning",
+                "Centrifugation",
+                "Decanting"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "food-19",
+            "category": "food",
+            "difficulty": "hard",
+            "question": "Which compound is responsible for the heat in chili peppers, measured on the Scoville scale?",
+            "options": [
+                "Piperine",
+                "Capsaicin",
+                "Allicin",
+                "Gingerol"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "food-20",
+            "category": "food",
+            "difficulty": "hard",
+            "question": "What specific cut of beef is traditionally wrapped in duxelles and puff pastry to make Beef Wellington?",
+            "options": [
+                "Ribeye",
+                "Tenderloin",
+                "Sirloin",
+                "Flank"
+            ],
+            "correctIndex": 1
+        }
+    ],
+    "technology": [
+        {
+            "id": "tech-1",
+            "category": "technology",
+            "difficulty": "easy",
+            "question": "What does CPU stand for in computer hardware?",
+            "options": [
+                "Central Processing Unit",
+                "Computer Personal Unit",
+                "Central Process Processor",
+                "Control Power Unit"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "tech-2",
+            "category": "technology",
+            "difficulty": "easy",
+            "question": "Which programming language is known for using styling rules to design web pages?",
+            "options": [
+                "HTML",
+                "CSS",
+                "Python",
+                "SQL"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-3",
+            "category": "technology",
+            "difficulty": "easy",
+            "question": "Which company developed the Android operating system?",
+            "options": [
+                "Apple",
+                "Microsoft",
+                "Google",
+                "Samsung"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "tech-4",
+            "category": "technology",
+            "difficulty": "easy",
+            "question": "What type of storage is volatile and loses its data when the computer turns off?",
+            "options": [
+                "SSD",
+                "RAM",
+                "HDD",
+                "NVMe"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-5",
+            "category": "technology",
+            "difficulty": "easy",
+            "question": "What symbol is commonly used to prefix an ID selector in CSS?",
+            "options": [
+                ".",
+                "#",
+                "@",
+                "$"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-6",
+            "category": "technology",
+            "difficulty": "easy",
+            "question": "Which company created the Windows operating system?",
+            "options": [
+                "IBM",
+                "Apple",
+                "Microsoft",
+                "Oracle"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "tech-7",
+            "category": "technology",
+            "difficulty": "easy",
+            "question": "What standard protocol is used to securely transfer web pages over the internet?",
+            "options": [
+                "HTTP",
+                "HTTPS",
+                "FTP",
+                "SSH"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-8",
+            "category": "technology",
+            "difficulty": "medium",
+            "question": "In database systems, what does the acronym ACID stand for?",
+            "options": [
+                "Atomicity, Consistency, Isolation, Durability",
+                "Array, Cache, Index, Data",
+                "Asynchronous, Concurrent, Isolated, Distributed",
+                "Authentication, Control, Integrity, Domain"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "tech-9",
+            "category": "technology",
+            "difficulty": "medium",
+            "question": "Which data structure operates on a Last-In, First-Out (LIFO) principle?",
+            "options": [
+                "Queue",
+                "Stack",
+                "Linked List",
+                "Binary Tree"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-10",
+            "category": "technology",
+            "difficulty": "medium",
+            "question": "What is the average time complexity of searching an element in a balanced Binary Search Tree?",
+            "options": [
+                "O(1)",
+                "O(n)",
+                "O(log n)",
+                "O(n log n)"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "tech-11",
+            "category": "technology",
+            "difficulty": "medium",
+            "question": "In Git, which command is used to record changes to the local repository?",
+            "options": [
+                "git push",
+                "git commit",
+                "git pull",
+                "git add"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-12",
+            "category": "technology",
+            "difficulty": "medium",
+            "question": "What type of NoSQL database is MongoDB?",
+            "options": [
+                "Key-Value Store",
+                "Document Store",
+                "Graph Database",
+                "Column-Family Store"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-13",
+            "category": "technology",
+            "difficulty": "medium",
+            "question": "In HTTP status codes, what does 404 signify?",
+            "options": [
+                "Unauthorized",
+                "Internal Server Error",
+                "Not Found",
+                "Forbidden"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "tech-14",
+            "category": "technology",
+            "difficulty": "medium",
+            "question": "Which JavaScript runtime environment allows executing JavaScript code server-side?",
+            "options": [
+                "V8 Engine",
+                "Node.js",
+                "React",
+                "Webpack"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-15",
+            "category": "technology",
+            "difficulty": "hard",
+            "question": "In distributed computing, what does the CAP theorem state you can only guarantee two out of three of?",
+            "options": [
+                "Consistency, Availability, Partition Tolerance",
+                "Concurrency, Accuracy, Parallelism",
+                "Capacity, Availability, Performance",
+                "Computation, Access, Persistence"
+            ],
+            "correctIndex": 0
+        },
+        {
+            "id": "tech-16",
+            "category": "technology",
+            "difficulty": "hard",
+            "question": "What is the primary function of a Bloom filter in data structures?",
+            "options": [
+                "Sorting elements in linear time",
+                "Testing set membership with zero false positives",
+                "Testing set membership with possible false positives",
+                "Encrypting key-value pairs"
+            ],
+            "correctIndex": 2
+        },
+        {
+            "id": "tech-17",
+            "category": "technology",
+            "difficulty": "hard",
+            "question": "Which consensus mechanism does Bitcoin primarily use to validate transactions?",
+            "options": [
+                "Proof of Stake",
+                "Proof of Work",
+                "Delegated Proof of Stake",
+                "Proof of Authority"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-18",
+            "category": "technology",
+            "difficulty": "hard",
+            "question": "What scheduling anomaly occurs in thread synchronization when a lower-priority task holds a resource needed by a higher-priority task?",
+            "options": [
+                "Deadlock",
+                "Priority Inversion",
+                "Starvation",
+                "Race Condition"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-19",
+            "category": "technology",
+            "difficulty": "hard",
+            "question": "In garbage collection algorithms, what does the 'Tri-color Marking' strategy use the three colors to track?",
+            "options": [
+                "Memory allocation speed",
+                "Reachability of objects during collection",
+                "CPU cycle utilization",
+                "Thread execution states"
+            ],
+            "correctIndex": 1
+        },
+        {
+            "id": "tech-20",
+            "category": "technology",
+            "difficulty": "hard",
+            "question": "In neural networks, which problem does residual connections (ResNet) primarily address?",
+            "options": [
+                "Overfitting",
+                "Vanishing Gradient Problem",
+                "Data Imbalance",
+                "High Dimensionality"
+            ],
+            "correctIndex": 1
+        }
+    ]
+}
