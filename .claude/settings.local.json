@@ -38,7 +38,10 @@
       "Bash(node -e \"console.log\\(require.resolve\\('cookie'\\)\\)\")",
       "Bash(curl -s -o /dev/null -w \"frontend: %{http_code}\\\\n\" http://localhost:3000)",
       "Bash(node verify3.js)",
-      "Bash(node verify4a.js)"
+      "Bash(node verify4a.js)",
+      "Bash(node verify4b.js)",
+      "Bash(curl -s \"http://localhost:8000/api/scores/leaderboard?game=quiz\")",
+      "Bash(node -e ' *)"
     ]
   }
 }

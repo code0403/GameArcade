@@ -5,8 +5,12 @@ import { Avatar } from "@/components/ui/avatar";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { socket } from "@/lib/socket";
 import TicTacToeGame from "@/components/tictactoe/TicTacToeGame";
+import QuizGame from "@/components/quiz/QuizGame";
 
-const SUPPORTED_GAMES = ["tictactoe"];
+const GAME_COMPONENTS = {
+  tictactoe: TicTacToeGame,
+  quiz: QuizGame
+};
 
 export default function LobbyRoom({ roomId }) {
   const [room, setRoom] = useState(null);
@@ -39,8 +43,10 @@ export default function LobbyRoom({ roomId }) {
     return <p className="text-slate-400 text-center">Joining room...</p>;
   }
 
+  const GameComponent = GAME_COMPONENTS[room.game];
+
   return (
-    <Card className="bg-slate-800 text-white border-slate-700 w-full max-w-md mx-auto">
+    <Card className="bg-slate-800 text-white border-slate-700 w-full max-w-2xl mx-auto">
       <CardHeader>
         <CardTitle className="capitalize">{room.game} Lobby</CardTitle>
       </CardHeader>
@@ -53,8 +59,8 @@ export default function LobbyRoom({ roomId }) {
             </div>
           ))}
         </div>
-        {SUPPORTED_GAMES.includes(room.game) ? (
-          <TicTacToeGame roomId={roomId} players={room.players} />
+        {GameComponent ? (
+          <GameComponent roomId={roomId} players={room.players} />
         ) : (
           <p className="text-sm text-amber-400 text-center">
             Multiplayer {room.game} is coming soon — you&apos;re both in the room and ready to go
